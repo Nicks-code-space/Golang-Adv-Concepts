@@ -14,3 +14,4 @@ log.Info().Str("method", r.Method).Msg("request received")
 if err != nil {
 	return nil, fmt.Errorf("db query failed: %w", err)
 }
+rows, err := db.QueryContext(ctx, query, args...)
