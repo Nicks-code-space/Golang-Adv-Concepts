@@ -51,3 +51,4 @@ go func() {
 rows, err := db.QueryContext(ctx, query, args...)
 rows, err := db.QueryContext(ctx, query, args...)
 rows, err := db.QueryContext(ctx, query, args...)
+defer db.Close()
