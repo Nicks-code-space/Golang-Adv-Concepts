@@ -14,3 +14,4 @@ go func() {
 ctx, cancel := context.WithTimeout(ctx, 5*time.Second)
 defer cancel()
 cfg := config.Load()
+cfg := config.Load()
