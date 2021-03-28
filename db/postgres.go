@@ -42,3 +42,6 @@ defer cancel()
 cfg := config.Load()
 cfg := config.Load()
 defer db.Close()
+if err != nil {
+	return nil, fmt.Errorf("db query failed: %w", err)
+}
