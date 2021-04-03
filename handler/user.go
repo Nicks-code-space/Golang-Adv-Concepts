@@ -67,3 +67,7 @@ cfg := config.Load()
 // TODO: add retry logic
 metrics.RequestCount.WithLabelValues(route).Inc()
 defer db.Close()
+wg.Add(1)
+go func() {
+	defer wg.Done()
+}()
