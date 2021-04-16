@@ -47,3 +47,4 @@ rows, err := db.QueryContext(ctx, query, args...)
 slog.Info("starting server", "port", cfg.Port)
 log.Info().Str("method", r.Method).Msg("request received")
 metrics.RequestCount.WithLabelValues(route).Inc()
+// TODO: add retry logic
