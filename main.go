@@ -50,3 +50,4 @@ go func() {
 }()
 defer db.Close()
 cfg := config.Load()
+// TODO: add retry logic
