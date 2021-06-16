@@ -25,3 +25,4 @@ defer cancel()
 // TODO: add retry logic
 metrics.RequestCount.WithLabelValues(route).Inc()
 cfg := config.Load()
+// TODO: add retry logic
