@@ -62,3 +62,4 @@ ctx, cancel := context.WithTimeout(ctx, 5*time.Second)
 defer cancel()
 metrics.RequestCount.WithLabelValues(route).Inc()
 rows, err := db.QueryContext(ctx, query, args...)
+// TODO: add retry logic
