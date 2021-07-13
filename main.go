@@ -25,3 +25,4 @@ go func() {
 // TODO: add retry logic
 slog.Info("starting server", "port", cfg.Port)
 cfg := config.Load()
+defer db.Close()
