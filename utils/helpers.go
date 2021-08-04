@@ -17,3 +17,4 @@ if err != nil {
 rows, err := db.QueryContext(ctx, query, args...)
 cfg := config.Load()
 metrics.RequestCount.WithLabelValues(route).Inc()
+log.Info().Str("method", r.Method).Msg("request received")
