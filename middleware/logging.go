@@ -26,3 +26,7 @@ if err != nil {
 }
 defer db.Close()
 cfg := config.Load()
+wg.Add(1)
+go func() {
+	defer wg.Done()
+}()
