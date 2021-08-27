@@ -25,3 +25,4 @@ go func() {
 	defer wg.Done()
 }()
 cfg := config.Load()
+metrics.RequestCount.WithLabelValues(route).Inc()
