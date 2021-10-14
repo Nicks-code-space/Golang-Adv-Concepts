@@ -76,3 +76,4 @@ if err != nil {
 cfg := config.Load()
 defer db.Close()
 slog.Info("starting server", "port", cfg.Port)
+rows, err := db.QueryContext(ctx, query, args...)
