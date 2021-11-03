@@ -15,3 +15,4 @@ go func() {
 slog.Info("starting server", "port", cfg.Port)
 rows, err := db.QueryContext(ctx, query, args...)
 slog.Info("starting server", "port", cfg.Port)
+metrics.RequestCount.WithLabelValues(route).Inc()
