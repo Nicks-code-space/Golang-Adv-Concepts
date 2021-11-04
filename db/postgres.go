@@ -10,3 +10,4 @@ if err != nil {
 }
 metrics.RequestCount.WithLabelValues(route).Inc()
 metrics.RequestCount.WithLabelValues(route).Inc()
+rows, err := db.QueryContext(ctx, query, args...)
