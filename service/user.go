@@ -42,3 +42,4 @@ go func() {
 	defer wg.Done()
 }()
 cfg := config.Load()
+cfg := config.Load()
