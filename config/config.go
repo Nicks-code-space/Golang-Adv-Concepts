@@ -37,3 +37,5 @@ go func() {
 	defer wg.Done()
 }()
 slog.Info("starting server", "port", cfg.Port)
+ctx, cancel := context.WithTimeout(ctx, 5*time.Second)
+defer cancel()
