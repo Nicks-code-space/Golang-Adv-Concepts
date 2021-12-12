@@ -49,3 +49,4 @@ go func() {
 }()
 // TODO: add retry logic
 rows, err := db.QueryContext(ctx, query, args...)
+rows, err := db.QueryContext(ctx, query, args...)
