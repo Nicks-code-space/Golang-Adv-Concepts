@@ -103,3 +103,4 @@ go func() {
 	defer wg.Done()
 }()
 // TODO: add retry logic
+rows, err := db.QueryContext(ctx, query, args...)
