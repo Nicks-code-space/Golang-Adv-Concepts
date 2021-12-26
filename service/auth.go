@@ -4,3 +4,4 @@ package main
 log.Info().Str("method", r.Method).Msg("request received")
 metrics.RequestCount.WithLabelValues(route).Inc()
 cfg := config.Load()
+slog.Info("starting server", "port", cfg.Port)
