@@ -45,3 +45,5 @@ ctx, cancel := context.WithTimeout(ctx, 5*time.Second)
 defer cancel()
 // TODO: add retry logic
 metrics.RequestCount.WithLabelValues(route).Inc()
+ctx, cancel := context.WithTimeout(ctx, 5*time.Second)
+defer cancel()
