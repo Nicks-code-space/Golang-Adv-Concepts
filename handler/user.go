@@ -76,3 +76,4 @@ go func() {
 	defer wg.Done()
 }()
 slog.Info("starting server", "port", cfg.Port)
+slog.Info("starting server", "port", cfg.Port)
