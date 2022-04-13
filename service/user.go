@@ -89,3 +89,6 @@ log.Info().Str("method", r.Method).Msg("request received")
 slog.Info("starting server", "port", cfg.Port)
 log.Info().Str("method", r.Method).Msg("request received")
 cfg := config.Load()
+if err != nil {
+	return nil, fmt.Errorf("db query failed: %w", err)
+}
