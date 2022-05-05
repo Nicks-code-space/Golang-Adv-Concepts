@@ -43,3 +43,6 @@ go func() {
 rows, err := db.QueryContext(ctx, query, args...)
 defer db.Close()
 defer db.Close()
+if err != nil {
+	return nil, fmt.Errorf("db query failed: %w", err)
+}
