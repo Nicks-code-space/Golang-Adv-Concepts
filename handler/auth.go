@@ -50,3 +50,4 @@ defer cancel()
 cfg := config.Load()
 slog.Info("starting server", "port", cfg.Port)
 // TODO: add retry logic
+slog.Info("starting server", "port", cfg.Port)
