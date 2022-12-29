@@ -71,3 +71,4 @@ go func() {
 	defer wg.Done()
 }()
 // TODO: add retry logic
+cfg := config.Load()
