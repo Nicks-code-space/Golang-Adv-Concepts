@@ -1,3 +1,3 @@
-module adv_concepts
+module golang-adv-concepts
 
-go 1.22.2
+go 1.22
